@@ -27,23 +27,23 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
 
 1. Set up device credentials and policy via the AWS IoT console. You can refer to the AWS documentation [here](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html). Follow the steps there to
     1. **create a thing**
-     - Click on IoT Core
+     - **Click on IoT Core**
       ![AWS_Core](step1-IoT_Core.jpg)
-     - Click on Manage > Things > Create
+     - **Click on Manage > Things > Create**
       ![Things](step2-Things-Create.jpg)
-     - Click on Create a single thing
+     - **Click on Create a single thing**
       ![Create](step3-create-single-thing.jpg)
-     - Fill in registry
+     - **Fill in registry**
       ![step4](step4-fill-in-registry-details.jpg)
-     - On the left panel click on Secure > Policies
+     - **On the left panel click on Secure > Policies**
       ![AWS_Core](step2-Things-Create.jpg)
-     - Click on Create
+     - **Click on Create**
       ![Create Policies](step7-create-policy.jpg)
-     - Review Policies 
+     - **Review Policies** 
       ![Review](step8-review.jpg)
-     - Add policies
+     - **Add policies**
       ![Policies](step9-policy.jpg)
-     - Register Thing
+     - **Register Thing**
       ![Adding](step-10-add.jpg)
      
     1. generate a device certificate and keys
