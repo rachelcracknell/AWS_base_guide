@@ -1,4 +1,4 @@
-# AWS cloud and Mbed OS for intelligent sensor monitoring
+# Mbed OS example for AWS cloud
 
 The example project is part of the [Arm Mbed OS Official Examples](https://os.mbed.com/code/). It contains an application that connects to an AWS MQTT broker and publishes a message every 10 seconds containing sensor readings to the cloud which are then analyzed, depending on the readings, a message is sent back to the board which turns on an LED.
 
