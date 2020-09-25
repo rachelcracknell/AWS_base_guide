@@ -43,7 +43,7 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
       ![Review](step8-review.jpg)
      - **Add policies**
       ![Policies](step9-policy.jpg)
-     - **Register Thing
+     - **Register Thing**
       ![Adding](step-10-add.jpg)
      
     1. generate a device certificate and keys
