@@ -1,8 +1,7 @@
 # Mbed OS example for AWS cloud
+The example project is part of the [Arm Mbed OS Official Examples](https://os.mbed.com/code/). It contains an application that connects to an AWS MQTT broker and publishes a message every 1 second for 10 seconds or until a message is received.
 
-The example project is part of the [Arm Mbed OS Official Examples](https://os.mbed.com/code/). It contains an application that connects to an AWS MQTT broker and publishes a message every 10 seconds containing sensor readings to the cloud which are then analyzed, depending on the readings, a message is sent back to the board which turns on an LED.
-
-You can build the project with all supported [Mbed OS build tools](https://os.mbed.com/docs/mbed-os/v6.3/build-tools/index.html). However, this example project specifically refers to the command-line interface tool [Arm Mbed CLI](https://github.com/ARMmbed/mbed-cli#installing-mbed-cli).
+You can build the project with all supported [Mbed OS build tools](https://os.mbed.com/docs/mbed-os/latest/tools/index.html). However, this example project specifically refers to the command-line interface tool [Arm Mbed CLI](https://github.com/ARMmbed/mbed-cli#installing-mbed-cli).
 
 **Note**: To see a rendered example you can import into the Arm Online Compiler, please see our [import quick start](https://os.mbed.com/docs/mbed-os/v6.3/quick-start/build-with-the-online-compiler.html#importing-the-code).
 
