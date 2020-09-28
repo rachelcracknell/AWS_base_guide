@@ -8,7 +8,21 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
 
 # Downloading this project
 
-**UPDATE** WITH ACTUAL INSTRUCTIONS ONCE PROJECT IS MADE
+1. [Install Mbed CLI](https://os.mbed.com/docs/mbed-os/latest/quick-start/offline-with-mbed-cli.html).
+
+1. Clone this repository on your system, and change the current directory to where the project was cloned:
+
+    ```
+    $ git clone https://github.com/ARMmbed/mbed-os-example-for-aws.git && cd mbed-os-example-for-aws
+    $ mbed deploy
+    ```
+
+    Alternatively, you can download the example project with Arm Mbed CLI using the `import` subcommand:
+
+    ```
+    $ mbed import mbed-os-example-for-aws && cd mbed-os-example-for-aws
+    ```
+
 
 # Project structure
 - Establish AWS IoT Core service
@@ -42,9 +56,9 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
      - **Review Policies** 
       ![Review](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step8-review.jpg)
      - **Add policies**
-      ![Policies](step9-policy.jpg)
+      ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step9-policy.jpg)
      - **Register Thing**
-      ![Adding](step-10-add.jpg)
+      ![Adding](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step-10-add.jpg)
      
     1. generate a device certificate and keys
     1. create an IoT policy and attach that policy to your device.
