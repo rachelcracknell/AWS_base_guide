@@ -1,9 +1,9 @@
-# AWS cloud and Mbed OS for intelligent sensor monitoring
+# Mbed OS example for AWS cloud
+The example project is part of the [Arm Mbed OS Official Examples](https://os.mbed.com/code/). It contains an application that connects to an AWS MQTT broker and publishes a message every 1 second for 10 seconds or until a message is received.
 
-The example project is part of the [Arm Mbed OS Official Examples](https://os.mbed.com/code/). It contains an application that connects to an AWS MQTT broker and publishes a message every 10 seconds containing sensor readings to the cloud which are then analyzed, depending on the readings, a message is sent back to the board which turns on an LED.
+You can build the project with all supported [Mbed OS build tools](https://os.mbed.com/docs/mbed-os/latest/tools/index.html). However, this example project specifically refers to the command-line interface tool [Arm Mbed CLI](https://github.com/ARMmbed/mbed-cli#installing-mbed-cli).
 
-You can build the project with all supported [Mbed OS build tools](https://os.mbed.com/docs/mbed-os/v6.3/build-tools/index.html). However, this example project specifically refers to the command-line interface tool [Arm Mbed CLI](https://github.com/ARMmbed/mbed-cli#installing-mbed-cli).
-(**Note**: To see a rendered example you can import into the Arm Online Compiler, please see our [import quick start](https://os.mbed.com/docs/mbed-os/v6.3/quick-start/build-with-the-online-compiler.html#importing-the-code).)
+**Note**: To see a rendered example you can import into the Arm Online Compiler, please see our [import quick start](https://os.mbed.com/docs/mbed-os/v6.3/quick-start/build-with-the-online-compiler.html#importing-the-code).
 
 
 # Downloading this project
@@ -28,19 +28,19 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
 1. Set up device credentials and policy via the AWS IoT console. You can refer to the AWS documentation [here](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html). Follow the steps there to
     1. **create a thing**
      - **Click on IoT Core**
-      ![AWS_Core](step1-IoT_Core.jpg)
+      ![AWS_Core](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step1-IoT_Core.jpg)
      - **Click on Manage > Things > Create**
-      ![Things](step2-Things-Create.jpg)
+      ![Things](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step2-Things-Create.jpg)
      - **Click on Create a single thing**
-      ![Create](step3-create-single-thing.jpg)
+      ![Create](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step3-create-single-thing.jpg)
      - **Fill in registry**
-      ![step4](step4-fill-in-registry-details.jpg)
+      ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step4-fill-in-registry-details.jpg)
      - **On the left panel click on Secure > Policies**
-      ![AWS_Core](step2-Things-Create.jpg)
+      ![AWS_Core](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step2-Things-Create.jpg)
      - **Click on Create**
-      ![Create Policies](step7-create-policy.jpg)
+      ![Create Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step7-create-policy.jpg)
      - **Review Policies** 
-      ![Review](step8-review.jpg)
+      ![Review](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step8-review.jpg)
      - **Add policies**
       ![Policies](step9-policy.jpg)
      - **Register Thing**
