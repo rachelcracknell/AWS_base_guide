@@ -49,6 +49,7 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
      - Fill in your policy as shown below then click **Create**
       ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/aws_policy_advanced_mode_example.jpg)
       **note:** you will need to substitute the **Resource** value above with your actual value from your **Thing** (which we will create next) by editing the policy after registering your **Thing**.
+      
     2. Register a **Thing** 
      - Click on **Manage > Things > Create**
       ![Things](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step2-Things-Create.jpg)
@@ -57,6 +58,7 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
      - Fill in registry 
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/create_thing.jpg)
       **note**: no need to specify a type
+      
     3. Generate a device certificate and keys
      - Click on **Create certificate**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/certificate_option.jpg)
