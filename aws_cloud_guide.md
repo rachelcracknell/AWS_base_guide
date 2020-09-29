@@ -37,7 +37,7 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
 
 
 2. Set up device credentials and policy via the AWS IoT console. You can refer to the AWS documentation [here](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html). After having logged into your AWS account. Follow the steps there to
-    1. **create a thing**
+    1. Create an IoT policy
      - Click on **IoT Core**
       ![AWS_Core](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step1-IoT_Core.jpg)
      - On the left panel click on **Secure > Policies**
@@ -48,24 +48,23 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
       ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/creating_policy_click_advanced_mode.jpg)
      - Fill in your policy as shown below then click **Create**
       ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/aws_policy_advanced_mode_example.jpg)
+    2. Register a **Thing** 
      - Click on **Manage > Things > Create**
       ![Things](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step2-Things-Create.jpg)
      - Click on **Create a single thing**
       ![Create](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step3-create-single-thing.jpg)
      - Fill in registry (**note**: no need to specify a type)
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/create_thing.jpg)
+    3. Generate a device certificate and keys
      - Click on **Create certificate**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/certificate_option.jpg)
-     - Download certificates then click on **Activate**
+     - Download the public key, private key, and the certificate for this **Thing** then click on **Activate**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/download_certificates.jpg)
      - Click on **Attach a policy**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/attach_policies.jpg)
      - Ensure the correct policy is selected then click on **Register Thing**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/attach_policy_register_thing.jpg)
 
-     
-    2. generate a device certificate and keys
-    3. create an IoT policy and attach that policy to your device.
 
     Also download "Amazon Root CA 1" from [here](https://docs.aws.amazon.com/iot/latest/developerguide/server-authentication.html#server-authentication-certs).
 
