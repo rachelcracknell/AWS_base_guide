@@ -40,6 +40,14 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
     1. **create a thing**
      - Click on **IoT Core**
       ![AWS_Core](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step1-IoT_Core.jpg)
+     - On the left panel click on **Secure > Policies**
+      ![AWS_Core](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/secure_policies_pic2.jpg)
+     - Click on **Create**
+      ![Create Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step7-create-policy.jpg)
+     - Click on **Advanced mode**
+      ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/creating_policy_click_advanced_mode.jpg)
+     - Fill in your policy as shown below then click **Create**
+      ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/aws_policy_advanced_mode_example.jpg)
      - Click on **Manage > Things > Create**
       ![Things](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step2-Things-Create.jpg)
      - Click on **Create a single thing**
@@ -54,16 +62,7 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/attach_policies.jpg)
      - Ensure the correct policy is selected then click on **Register Thing**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/attach_policy_register_thing.jpg)
-     - On the left panel click on **Secure > Policies**
-      ![AWS_Core](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/secure_policies_pic2.jpg)
-     - Click on **Create**
-      ![Create Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step7-create-policy.jpg)
-     - Click on **Advanced mode**
-      ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/creating_policy_click_advanced_mode.jpg)
-     - Fill in your policy as shown below then click **Create**
-      ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/aws_policy_advanced_mode_example.jpg)
-     - Ensure correct policy is selected then click on **Register Thing**
-      ![Adding](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step-10-add.jpg)
+
      
     2. generate a device certificate and keys
     3. create an IoT policy and attach that policy to your device.
