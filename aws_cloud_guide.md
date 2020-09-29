@@ -33,13 +33,10 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
 
 1. Create an AWS account if you don’t have one, and login to it.
 
- **NOTE**: If you have an admin for your AWS account, please contact them to add a user to the account. You should obtain your login credentials from your admin in this case.
+	**NOTE**: If you have an admin for your AWS account, please contact them to add a user to the account. You should obtain your login credentials from your admin in this case.
 
-1. Create an AWS account if you don't have one, and login to it.
 
-    __NOTE:__ If you have an admin for your AWS account, please contact them to add a user to the account. You should obtain your login credentials from your admin in this case.
-
-1. Set up device credentials and policy via the AWS IoT console. You can refer to the AWS documentation [here](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html). After having logged into your AWS account. Follow the steps there to
+2. Set up device credentials and policy via the AWS IoT console. You can refer to the AWS documentation [here](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html). After having logged into your AWS account. Follow the steps there to
     1. **create a thing**
      - Click on **IoT Core**
       ![AWS_Core](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step1-IoT_Core.jpg)
@@ -48,7 +45,15 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
      - Click on **Create a single thing**
       ![Create](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step3-create-single-thing.jpg)
      - Fill in registry (**note**: no need to specify a type)
-      ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step4-fill-in-registry-details.jpg)
+      ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/create_thing.jpg)
+     - Click on **Create certificate**
+      ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/certificate_option.jpg)
+     - Download certificates then click on **Activate**
+      ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/download_certificates.jpg)
+     - Click on **Attach a ppolicy**
+      ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/attach_policies.jpg)
+     - Ensure the correct policy is selected then click on **Register Thing**
+      ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/attach_policy_register_thing.jpg)
      - On the left panel click on **Secure > Policies**
       ![AWS_Core](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/secure_policies_pic2.jpg)
      - Click on **Create**
@@ -60,8 +65,8 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
      - **Register Thing**
       ![Adding](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step-10-add.jpg)
      
-    1. generate a device certificate and keys
-    1. create an IoT policy and attach that policy to your device.
+    2. generate a device certificate and keys
+    3. create an IoT policy and attach that policy to your device.
 
     Also download "Amazon Root CA 1" from [here](https://docs.aws.amazon.com/iot/latest/developerguide/server-authentication.html#server-authentication-certs).
 
@@ -79,15 +84,15 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
     
     The above command will read your credential files and place them into a C header file for you: `aws_credentials.h`
 
-1. Once you have created the "thing", you will need to obtain the custom endpoint name from the console. At the time of writing this document, you can find it under "Settings" in the IoT console.
+3. Once you have created the "thing", you will need to obtain the custom endpoint name from the console. At the time of writing this document, you can find it under "Settings" in the IoT console.
 
     In [`mbed_app.json`](./mbed_app.json) file, set `aws-endpoint.value` to be that of the custom endpoint.
 
-1. Set a topic that both your device and the cloud can publish messages to.
+4. Set a topic that both your device and the cloud can publish messages to.
 
    In [`mbed_app.json`](./mbed_app.json) file, set `aws-mqtt-topic.value` to a name you prefer, or use the default one. On the AWS console, you will then need to subscribe to the same topic name. At the time of writing this document, you can find this under "Test" on the console.
 
-1. Give your device a name by setting `aws-client-identifier` in [`mbed_app.json`](./mbed_app.json).
+5. Give your device a name by setting `aws-client-identifier` in [`mbed_app.json`](./mbed_app.json).
 
 ## Building and running
 
