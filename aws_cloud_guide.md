@@ -50,7 +50,7 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/certificate_option.jpg)
      - Download certificates then click on **Activate**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/download_certificates.jpg)
-     - Click on **Attach a ppolicy**
+     - Click on **Attach a policy**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/attach_policies.jpg)
      - Ensure the correct policy is selected then click on **Register Thing**
       ![step4](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/attach_policy_register_thing.jpg)
@@ -60,9 +60,9 @@ You can build the project with all supported [Mbed OS build tools](https://os.mb
       ![Create Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step7-create-policy.jpg)
      - Click on **Advanced mode**
       ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/creating_policy_click_advanced_mode.jpg)
-     - Fill in your policy as shown below
+     - Fill in your policy as shown below then click **Create**
       ![Policies](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/aws_policy_advanced_mode_example.jpg)
-     - **Register Thing**
+     - Ensure correct policy is selected then click on **Register Thing**
       ![Adding](https://raw.githubusercontent.com/COTASPAR/AWS_base_guide/master/images/step-10-add.jpg)
      
     2. generate a device certificate and keys
